@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <div id="quizScreen">
+    <div class="quiz-header">
+      <h1>Quiz Game</h1>
+      <div class="progress">
+        <span id="qCount">Question 1/5</span>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <span id="score">Score: 0</span>
+      </div>
+    </div>
+
+    <div class="question-box">
+      <div class="question-type" id="qType">Single Select</div>
+      <div class="question-text" id="qText"></div>
+      <div class="options" id="optionsBox"></div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn-prev" id="prevBtn" disabled>Previous</button>
+      <button class="btn-next" id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <div id="resultsScreen" class="hidden">
+    <div class="results">
+      <div class="score-circle">
+        <div class="score-number" id="finalScore">0/5</div>
+        <div class="score-text">Correct</div>
+      </div>
+      <h2 id="resultMsg">Great Job!</h2>
+      <p style="color: #a0a0c0; margin: 15px 0 30px;">Here's how you did:</p>
+      <div id="reviewBox"></div>
+      <button class="btn-restart" id="restartBtn">Next Set</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
